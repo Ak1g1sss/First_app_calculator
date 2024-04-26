@@ -44,7 +44,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/AC"
+                android:id="@+id/b_AC"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -52,7 +52,7 @@
                 android:text="AC" />
 
             <TextView
-                android:id="@+id/del"
+                android:id="@+id/b_del"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -61,7 +61,7 @@
 
 
             <TextView
-                android:id="@+id/percent"
+                android:id="@+id/b_percent"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -69,7 +69,7 @@
                 android:text="%" />
 
             <TextView
-                android:id="@+id/slash"
+                android:id="@+id/b_slash"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -107,7 +107,7 @@
                 android:text="3" />
 
             <TextView
-                android:id="@+id/multiply"
+                android:id="@+id/b_multiply"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -146,7 +146,7 @@
                 android:text="6" />
 
             <TextView
-                android:id="@+id/minus"
+                android:id="@+id/b_minus"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -184,7 +184,7 @@
                 android:text="9" />
 
             <TextView
-                android:id="@+id/plus"
+                android:id="@+id/b_plus"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -206,7 +206,7 @@
                 android:text="0" />
 
             <TextView
-                android:id="@+id/comma"
+                android:id="@+id/b_comma"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -214,7 +214,7 @@
                 android:text="," />
 
             <TextView
-                android:id="@+id/equal"
+                android:id="@+id/b_equal"
                 style="@style/ActionButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val result: TextView = findViewById(R.id.result_text)
         val operation: TextView = findViewById(R.id.math_operation)
+        val b_plus =
+        b_plus.setOnClickListener{math_operation.append("+")}
+
 
 
 
