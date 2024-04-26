@@ -10,12 +10,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:textColor="@android:color/white"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:textSize="40sp"
+        android:singleLine="true"
+        />
     <TextView
         android:id="@+id/result_text"
         android:layout_width="match_parent"
         android:layout_height="100sp"
         android:textColor="@android:color/white"
+        android:background="#fff"
         android:gravity="end"
         android:ellipsize="end"
         android:textSize="30sp"
@@ -26,62 +36,170 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            >
-            <TextView
-                style="@style/ActionButton"
-                android:text="+"
-                />
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 style="@style/ActionButton"
-                android:layout_width="89dp"
-                android:text="-" />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AC" />
 
             <TextView
                 style="@style/ActionButton"
-                android:layout_width="115dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+/-" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="%" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="/" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="*" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
             <TextView
                 style="@style/ActionButton"
-                android:text="AC"
-                />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            >
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            >
-        </LinearLayout>
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="0" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            >
-        </LinearLayout>
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="," />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            >
+            <TextView
+                style="@style/ActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="=" />
         </LinearLayout>
     </LinearLayout>
 
