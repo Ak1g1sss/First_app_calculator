@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             if (str != "")
                 operation.text = str.substring(0, str.length-1)
         }
-
         binding.bPercent.setOnClickListener { operation.append("%") }
         binding.bSlash.setOnClickListener { operation.append("/") }
         binding.bMultiply.setOnClickListener { operation.append("*") }
@@ -74,8 +73,18 @@ class MainActivity : AppCompatActivity() {
                     result.text = "Error"
                 }
             }
-
         }
+        //Цифры
+        binding.numZero.setOnClickListener { operation.append("0") }
+        binding.numOne.setOnClickListener { operation.append("1") }
+        binding.numTwo.setOnClickListener { operation.append("2") }
+        binding.numThree.setOnClickListener { operation.append("3") }
+        binding.numFour.setOnClickListener { operation.append("4") }
+        binding.numFive.setOnClickListener { operation.append("5") }
+        binding.numSix.setOnClickListener { operation.append("6") }
+        binding.numSeven.setOnClickListener { operation.append("7") }
+        binding.numEight.setOnClickListener { operation.append("8") }
+        binding.numNine.setOnClickListener { operation.append("9") }
 
 
     }

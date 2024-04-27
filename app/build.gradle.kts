@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -37,6 +38,7 @@ android {
         viewBinding = true
     }
 }
+
 
 dependencies {
     implementation ("com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.9")
