@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val result: TextView = findViewById(R.id.result_text)
         val operation: TextView = findViewById(R.id.math_operation)
 /*
-        //Операции
+        //
         val b_AC: TextView = findViewById(R.id.b_AC)
         val b_del: TextView = findViewById(R.id.b_del)
         val b_percent: TextView = findViewById(R.id.b_percent)
