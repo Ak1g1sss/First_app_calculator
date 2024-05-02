@@ -28,8 +28,7 @@ class MainActivity : AppCompatActivity() {
         val b_plus: TextView = findViewById(R.id.b_plus)
         val b_comma: TextView = findViewById(R.id.b_comma)
         val b_equal: TextView = findViewById(R.id.b_equal)
-
-        //Цифры
+        //
         val num_one: TextView = findViewById(R.id.num_one)
         val num_two: TextView = findViewById(R.id.num_two)
         val num_three: TextView = findViewById(R.id.num_three)
